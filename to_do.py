@@ -1,7 +1,7 @@
 def display_todos(todos):
-    print("\nDanh sách việc cần làm:")
+    print("\nTodo list:")
     if not todos:
-        print("Không có việc nào!")
+        print("No tasks!")
     else:
         for index, todo in enumerate(todos, start=1):
             print(f"{index}. {todo}")
@@ -10,38 +10,38 @@ def main():
     todos = []
     
     while True:
-        print("\nChọn một tùy chọn:")
-        print("1. Thêm việc")
-        print("2. Xem việc")
-        print("3. Xóa việc")
-        print("4. Thoát")
+        print("\nChoose an option:")
+        print("1. Add a task")
+        print("2. View tasks")
+        print("3. Delete a task")
+        print("4. Exit")
         
-        choice = input("Nhập tùy chọn của bạn (1/2/3/4): ")
+        choice = input("Enter your choice (1/2/3/4): ")
 
         match choice:
             case '1':
-                todo = input("Nhập việc cần thêm: ")
+                todo = input("Enter a task to add: ")
                 todos.append(todo) 
-                print(f"Đã thêm việc: {todo}")
+                print(f"Task added: {todo}")
 
             case '2':
                 display_todos(todos) 
 
             case '3':
                 display_todos(todos)
-                index = int(input("Nhập số thứ tự việc cần xóa: ")) - 1
+                index = int(input("Enter the number of the task to delete: ")) - 1
                 if 0 <= index < len(todos):
                     removed = todos.pop(index) 
-                    print(f"Đã xóa việc: {removed}")
+                    print(f"Task deleted: {removed}")
                 else:
-                    print("Số thứ tự không hợp lệ!")
+                    print("Invalid task number!")
 
             case '4':
-                print("Cảm ơn đã sử dụng ứng dụng Todo List!")
+                print("Thank you for using the Todo List app!")
                 break
 
             case _:
-                print("Tùy chọn không hợp lệ! Vui lòng thử lại.")
+                print("Invalid option! Please try again.")
 
 if __name__ == "__main__":
     main()
