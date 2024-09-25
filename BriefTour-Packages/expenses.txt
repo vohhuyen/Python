@@ -1,0 +1,6 @@
+Salary: 10000000.0
+Expenses:
+- xangxe: 500000.0
+- food: 1000000.0
+- personal: 500000.0
+Total expenses: 2000000.0
