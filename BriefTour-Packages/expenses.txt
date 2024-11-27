@@ -1,0 +1,6 @@
+Salary: 1000000.0
+Expenses:
+- clothes: 300000.0
+- food: 100000.0
+- other: 100000.0
+Total expenses: 500000.0

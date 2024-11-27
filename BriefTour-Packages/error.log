@@ -1,0 +1,4 @@
+ERROR:root:Error: could not convert string to float: 'f'. Please enter a valid amount!
+ERROR:root:Error: could not convert string to float: 'nfnfnf'. Please enter a valid amount!
+ERROR:root:Error: could not convert string to float: 'nfkfef'. Please enter a valid amount!
+ERROR:root:Error: could not convert string to float: 'salary'. Please enter a valid number!
